@@ -1,5 +1,7 @@
 [![Coverage Status](https://coveralls.io/repos/github/EmmanuelMess/TDD2018/badge.svg?branch=master)](https://coveralls.io/github/EmmanuelMess/TDD2018?branch=master) [![Build Status](https://travis-ci.org/EmmanuelMess/TDD2018.svg?branch=master)](https://travis-ci.org/EmmanuelMess/TDD2018)
 
+Integrante: Emmanuel Messulam
+
 # Consigna
 
 - Utilizando TDD.
