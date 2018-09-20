@@ -37,12 +37,12 @@ class Mazo {
     if($this->cant > 0) {
       $myRand = rand(0, $this->cant-1);
       $i = 0;
-
+/*
       for($i; $i += 1; $i <= $myRand) {
         $tmp = $this->array[$i];
         unset($this->array[$i]);
         $this->agregar($tmp);
-      }
+      }*/
       return True;
     }
   }
