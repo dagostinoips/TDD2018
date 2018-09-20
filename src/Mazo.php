@@ -7,7 +7,7 @@ class Mazo {
   protected $array = [];
 
   public function esVacio() {
-    return empty($array);
+    return empty($this->array);
   }
 
   public function agregar($element) {
