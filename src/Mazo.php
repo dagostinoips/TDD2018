@@ -17,8 +17,8 @@ class Mazo {
     $this->cant += 1;
   }
 
-  public function buscar($element) {
-    if($this->cant != 0) {
+  public function sacar() {
+    if($this->cant > 0) {
       $this->top = $this->array[$this->cant-1];
       unset($this->array[$this->cant-1]);
 

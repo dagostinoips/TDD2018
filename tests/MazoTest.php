@@ -23,8 +23,9 @@ class MazoTest extends TestCase {
         $this->assertEquals($mazo->cantidad(), 4);
     }
 
-    public function testBuscar() {
+    public function testSacar() {
         $mazo = new Mazo;
+        $this->assertFalse($mazo->sacar());
         $mazo->agregar("carta1");
         $mazo->agregar("carta2");
         $mazo->agregar("carta3");
