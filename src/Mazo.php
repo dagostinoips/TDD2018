@@ -10,6 +10,10 @@ class Mazo {
     return empty($array);
   }
 
+  public function agregar($element) {
+    $this->array[] = $element;
+  }
+
   public function mezclar() {
     return TRUE;
   }
