@@ -9,6 +9,8 @@ class MazoTest extends TestCase {
     public function testEsVacio() {
         $mazo = new Mazo;
         $this->assertTrue($mazo->esVacio());
+        $this->assertTrue($mazo->agregar("carta1"));
+        $this->assertFalse($mazo->esVacio());
     }
 
     public function testExiste() {
