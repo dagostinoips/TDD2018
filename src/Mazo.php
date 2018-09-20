@@ -33,6 +33,19 @@ class Mazo {
     }
   }
 
+  public function cortar() {
+    if($this->cant > 0) {
+      $myRand = rand(1, $this->cant);
+
+      for($i == 0; $i += 1; $i <= $myRand) {
+        $tmp = $this->array[$i];
+        unset($this->array[$i]);
+        $this->agregar($tmp);
+      }
+      return True;
+    }
+  }
+
   public function cantidad() {
     return $this->cant;
   }
