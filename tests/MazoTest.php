@@ -6,8 +6,7 @@ use PHPUnit\Framework\TestCase;
 
 class MazoTest extends TestCase {
 
-    public function testEsVacio()
-    {
+    public function testEsVacio() {
         $mazo = new Mazo;
         $this->assertTrue($mazo->esVacio());
     }
