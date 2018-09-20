@@ -39,8 +39,14 @@ class MazoTest extends TestCase {
         $mazo->agregar("carta2");
         $mazo->agregar("carta3");
         $mazo->agregar("carta4");
+        $mazo2 = new Mazo;
+        $mazo2->agregar("carta1");
+        $mazo2->agregar("carta2");
+        $mazo2->agregar("carta3");
+        $mazo2->agregar("carta4");
         $this->assertTrue($mazo->mezclar());
         #$this->assertNotEquals($mazo->sacar(), "carta4");  No se si poner este test porque es al azar
+        $this->assertNotEquals($mazo->cartas(), $mazo2->cartas());
     }
 
     public function testCortar() {

@@ -50,4 +50,8 @@ class Mazo {
   public function cantidad() {
     return $this->cant;
   }
+
+  public function cartas() {
+    return $this->array;
+  }
 }
