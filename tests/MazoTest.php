@@ -35,7 +35,6 @@ class MazoTest extends TestCase {
 
     public function testMezclar() {
         $mazo = new Mazo;
-        $this->assertFalse($mazo->mezclar());
         $mazo->agregar("carta1");
         $mazo->agregar("carta2");
         $mazo->agregar("carta3");
