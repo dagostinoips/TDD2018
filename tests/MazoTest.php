@@ -6,9 +6,12 @@ use PHPUnit\Framework\TestCase;
 
 class MazoTest extends TestCase {
 
-    /**
-     * Valida que se puedan crear mazos de cartas.
-     */
+    public function testEsVacio()
+    {
+        $mazo = new Mazo;
+        $this->assertTrue($mazo->esVacio());
+    }
+
     public function testExiste() {
         $mazo = new Mazo;
         $this->assertTrue(isset($mazo));
