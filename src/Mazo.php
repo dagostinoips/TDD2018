@@ -17,6 +17,10 @@ class Mazo {
     $this->cant += 1;
   }
 
+  public function mezclar() {
+    return shuffle($this->array);
+  }
+
   public function sacar() {
     if($this->cant > 0) {
       $this->top = $this->array[$this->cant-1];
