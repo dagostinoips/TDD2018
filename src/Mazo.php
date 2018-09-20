@@ -6,6 +6,7 @@ class Mazo {
 
   protected $array = [];
   protected $cant = 0;
+  protected $top;
 
   public function esVacio() {
     return empty($this->array);
@@ -17,8 +18,11 @@ class Mazo {
   }
 
   public function buscar($element) {
-    if($element <= $this->cantidad) {
-      return $this->array[$element];
+    if($this->cant != 0) {
+      $this->top = $this->array[$this->cant-1];
+      unset($this->array[$this->cant-1]);
+
+      return $this->top;
     }
     else {
       return False;

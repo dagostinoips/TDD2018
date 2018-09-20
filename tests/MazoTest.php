@@ -29,8 +29,7 @@ class MazoTest extends TestCase {
         $mazo->agregar("carta2");
         $mazo->agregar("carta3");
         $mazo->agregar("carta4");
-        $this->assertEquals($mazo->buscar(2), "carta2");
-        $this->assertFalse($mazo->buscar(5));
+        $this->assertEquals($mazo->sacar(), "carta4");
     }
 
     public function testExiste() {
