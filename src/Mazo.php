@@ -51,7 +51,7 @@ class Mazo {
     return $this->cant;
   }
 
-  public function cartas() {
+  public function cartas() { # Esta funcion es empleada para el testeo de la funcion mezclar
     return $this->array;
   }
 }
