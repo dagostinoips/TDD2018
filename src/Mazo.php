@@ -16,6 +16,15 @@ class Mazo {
     $this->cant += 1;
   }
 
+  public function buscar($element) {
+    if($element <= $this->cantidad) {
+      return $this->array[$element];
+    }
+    else {
+      return False;
+    }
+  }
+
   public function cantidad() {
     return $this->cant;
   }
