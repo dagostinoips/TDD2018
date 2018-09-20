@@ -39,7 +39,7 @@ class MazoTest extends TestCase {
         $mazo->agregar("carta2");
         $mazo->agregar("carta3");
         $mazo->agregar("carta4");
-        $this->assertTrue($mazo->mezcla());
+        $this->assertTrue($mazo->mezclar());
         #$this->assertNotEquals($mazo->sacar(), "carta4");
     }
 
