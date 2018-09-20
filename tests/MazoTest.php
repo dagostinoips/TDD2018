@@ -13,6 +13,16 @@ class MazoTest extends TestCase {
         $this->assertFalse($mazo->esVacio());
     }
 
+    public function testCantidad() {
+        $mazo = new Mazo;
+        $this->assertEquals($mazo->cantidad(), 0);
+        $mazo->agregar("carta1");
+        $mazo->agregar("carta2");
+        $mazo->agregar("carta3");
+        $mazo->agregar("carta4");
+        $this->assertEquals($mazo->cantidad(), 4);
+    }
+
     public function testExiste() {
         $mazo = new Mazo;
         $this->assertTrue(isset($mazo));
