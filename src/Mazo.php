@@ -36,8 +36,4 @@ class Mazo {
   public function cantidad() {
     return $this->cant;
   }
-
-  public function mezclar() {
-    return TRUE;
-  }
 }
