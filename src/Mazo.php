@@ -35,7 +35,7 @@ class Mazo {
 
   public function cortar() {
     if($this->cant > 0) {
-      $myRand = rand(1, $this->cant);
+      $myRand = rand(0, $this->cant-1);
       $i = 0;
 
       for($i; $i += 1; $i <= $myRand) {
