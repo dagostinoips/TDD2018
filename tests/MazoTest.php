@@ -45,6 +45,7 @@ class MazoTest extends TestCase {
 
     public function testCortar() {
         $mazo = new Mazo;
+        $this->assertNotTrue($mazo->cortar());
         $mazo->agregar("carta1");
         $mazo->agregar("carta2");
         $mazo->agregar("carta3");
